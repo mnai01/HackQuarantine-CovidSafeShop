@@ -1,7 +1,5 @@
 # CovidSafeShop
 
-http://coronatimes.online/
-
 This project was assembled during the 2020 HackQuarantine by https://github.com/m-wrzr/populartimes, [River Dennis](https://github.com/scifipanda), and [Nick Guzzardo](https://github.com/NickGuz).
 
 ## Summary
