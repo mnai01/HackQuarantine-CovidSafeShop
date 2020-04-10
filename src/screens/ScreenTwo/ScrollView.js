@@ -47,6 +47,7 @@ export default function ScroolView(props) {
   let list = props.data;
   let didMount = props.mounted;
   let currentLocation = props.currentLocation;
+
   return (
     <ScrollView>
       {didMount ? (
@@ -176,12 +177,12 @@ const styles = StyleSheet.create({
     margin: 5,
     borderRadius: 7,
   },
-  resTitle: { padding: 3, fontSize: 18, color: "black", fontWeight: "bold" },
-  resDistance: { padding: 3, fontStyle: "italic", color: "black" },
-  resAddress: { padding: 3, color: "black" },
-  resStatus: { padding: 3, fontWeight: "bold" },
-  resLive: { padding: 3, fontWeight: "bold", color: "red" },
-  resAvgPop: { padding: 3, fontStyle: "italic", color: "black" },
+  resTitle: { padding: 3, fontSize: 18, color: "black", fontWeight: "bold", flexWrap: 'wrap', flex: 1, width: 250 },
+  resDistance: { padding: 3, fontStyle: "italic", color: "black", flexWrap: 'wrap', flex: 1, width: 250 },
+  resAddress: { padding: 3, color: "black", flexWrap: 'wrap', flex: 1, width: 250},
+  resStatus: { padding: 3, fontWeight: "bold", flexWrap: 'wrap', flex: 1, width: 250 },
+  resLive: { padding: 3, fontWeight: "bold", color: "red", flexWrap: 'wrap', flex: 1, width: 250 },
+  resAvgPop: { padding: 3, fontStyle: "italic", color: "black", flexWrap: 'wrap', flex: 1, width: 250 },
   resListButton: {
     backgroundColor: "#3BA1FF",
     width: 80,

@@ -12,11 +12,7 @@ import * as Permissions from "expo-permissions";
 import axios from "axios";
 import ScrollView from "./ScrollView";
 
-let url =
-  "https://api.radar.io/v1/search/geofences?tags=venue&near=40.783826,-73.975363&radius=1000&limit=10";
-let test = [];
-
-export default function NotApp() {
+export default function ScanScreen() {
   state = {
     location: null,
     geocode: null,
@@ -139,6 +135,7 @@ export default function NotApp() {
           style={styles.textInput}
           onChangeText={(text) => onChangeText(text)}
           value={value}
+          onEndEditing={handler}
         />
       </View>
 
