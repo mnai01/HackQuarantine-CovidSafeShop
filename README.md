@@ -29,7 +29,7 @@ This page lets the user turn on or off automatic notificatons based on the users
 ![Notification](assets/Notification.JPG)
 ![NotificationPage](assets/NotificationPage.JPG)
 
-**Code**
+**View code page**
 
 ![code-redirect](assets/CodePage.JPG)
 
