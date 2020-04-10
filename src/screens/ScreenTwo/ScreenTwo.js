@@ -11,6 +11,7 @@ import * as Location from "expo-location";
 import * as Permissions from "expo-permissions";
 import axios from "axios";
 import ScrollView from "./ScrollView";
+import { Feather } from "@expo/vector-icons";
 
 export default function ScanScreen() {
   state = {
@@ -128,17 +129,18 @@ export default function ScanScreen() {
 
   return (
     <View style={styles.container}>
-      <View style={styles.textInputContainer}>
-        <TextInput
-          placeholder="Enter a place"
-          underlineColorAndroid={"#428Af8"}
-          style={styles.textInput}
-          onChangeText={(text) => onChangeText(text)}
-          value={value}
-          onEndEditing={handler}
-        />
-      </View>
 
+          <View style={styles.inputContainer}>
+            <Feather name="search" style={styles.iconStyle}/>
+            <TextInput 
+                placeholder="Enter a place"
+                underlineColorAndroid={"#428Af8"}
+                style={styles.inputStyle}
+                onChangeText={(text) => onChangeText(text)}
+                value={value}
+                onEndEditing={handler}
+            />
+          </View>
       {ErrorTyped ? (
         <View style={styles.ScrollViewMessageContainer}>
           <Text style={styles.ScrollViewMessage}>
@@ -183,12 +185,23 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   ScrollViewMessage: { fontWeight: "bold", fontSize: 18 },
-  textInputContainer: { justifyContent: "space-around" },
-  textInput: {
-    fontSize: 18,
-    textAlign: "center",
-    height: 40,
+  inputContainer: {
     marginTop: 50,
+    backgroundColor: '#f0EEEE',
+    height: 50,
+    borderRadius: 5,
+    marginHorizontal: 15,
+    flexDirection: 'row',
+  },
+  inputStyle: {
+      flex: 1,
+      fontSize: 20,
+      padding: 5,
+  },
+  iconStyle: {
+      fontSize: 35,
+      alignSelf: 'center',
+      marginHorizontal: 15,
   },
   buttonStyling: {
     marginTop: 10,
