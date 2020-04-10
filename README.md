@@ -13,12 +13,26 @@ The app gets live data from our flask api endpoint. It uses a 3rd party python l
 **Scan page**
 
 This is the main page which will provide users with the live population data needed to stay safe when shopping. As you can see below if you want more information about the page you can slick the navigate button which will bring you to its exact location on which ever map you use.
+
+Example Item
+![Example-item](assets/ExampleResult.JPG)
+
+Page Walk Through
 ![Scan-Page](assets/ScanPage.gif)
+
+**Notification page**
+![Notification](assets/Notification.JPG)
+![NotificationPage](assets/NotificationPage.JPG)
+
+This page lets the user turn on or off automatic notificatons based on the users location. If this setting is on then the app will scan your location periodily. If you ever step in a store the application will realize and send you a reminder to not touch your face and wash your hand when you're done. This new life style for us requires us to be very cautious while we are out. Some people still have trouble adjusting which why is this notification is geared towards remind you to be safe.
+
+**Code**
+![code-redirect](assets/CodePage.JPG)
+This page will bring you to our github project.
 
 ## Languages
 
 CovidSafeShop was built with React Native and our backend server was built with flask
-
 
 ## APIs
 
