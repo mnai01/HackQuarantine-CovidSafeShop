@@ -24,10 +24,10 @@ Page Walk Through
 
 **Notification page**
 
+This page lets the user turn on or off automatic notificatons based on the users location. If this setting is on then the app will scan your location periodily. If you ever step in a store the application will realize and send you a reminder to not touch your face and wash your hand when you're done. This new life style for us requires us to be very cautious while we are out. Some people still have trouble adjusting which why is this notification is geared towards remind you to be safe.
+
 ![Notification](assets/Notification.JPG)
 ![NotificationPage](assets/NotificationPage.JPG)
-
-This page lets the user turn on or off automatic notificatons based on the users location. If this setting is on then the app will scan your location periodily. If you ever step in a store the application will realize and send you a reminder to not touch your face and wash your hand when you're done. This new life style for us requires us to be very cautious while we are out. Some people still have trouble adjusting which why is this notification is geared towards remind you to be safe.
 
 **Code**
 
