@@ -15,7 +15,7 @@ The app gets live data from our flask api endpoint. It uses a 3rd party python l
 **Scan page**
 
 This is the main page which will provide users with the live population data needed to stay safe when shopping. As you can see below if you want more information about the page you can slick the navigate button which will bring you to its exact location on which ever map you use.
-![Scan-Page](https://gfycat.com/secretnauticalamericanwigeon)
+![Scan-Page](assets/ScanPage.gif)
 
 ## Languages
 
