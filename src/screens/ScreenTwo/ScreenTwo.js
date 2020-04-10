@@ -33,6 +33,7 @@ export default function ScanScreen() {
     errorMessage: "",
   });
 
+  const [value, onChangeText] = useState("");
 
   const [didMount, setDidMount] = useState(false);
   const [FinishedLoading, setLoading] = useState(false);
