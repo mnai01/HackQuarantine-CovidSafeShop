@@ -5,7 +5,7 @@ import { Feather } from "@expo/vector-icons";
 import "react-native-gesture-handler";
 
 import ScreenOne from "./src/screens/ScreenOne";
-import ScreenTwo from "./src/screens/ScreenTwo/ScreenTwo";
+import ScreenTwo from "./src/screens/ScreenTwo";
 import ScreenThree from "./src/screens/ScreenThree";
 
 const Tab = createBottomTabNavigator();

@@ -10,7 +10,7 @@ import {
 import * as Location from "expo-location";
 import * as Permissions from "expo-permissions";
 import axios from "axios";
-import ScrollView from "./ScrollView";
+import ListContainer from "../components/ListContainer";
 import { Feather } from "@expo/vector-icons";
 
 export default function ScanScreen() {
@@ -143,20 +143,20 @@ export default function ScanScreen() {
             />
           </View>
       {ErrorTyped ? (
-        <View style={styles.ScrollViewMessageContainer}>
-          <Text style={styles.ScrollViewMessage}>
+        <View style={styles.ListContainerMessageContainer}>
+          <Text style={styles.ListContainerMessage}>
             Please enter a correct place
           </Text>
         </View>
       ) : FinishedLoading ? (
-        <ScrollView
+        <ListContainer
           data={list}
           mounted={didMount}
           currentLocation={MyLocation}
         />
       ) : (
-        <View style={styles.ScrollViewMessageContainer}>
-          <Text style={styles.ScrollViewMessage}>
+        <View style={styles.ListContainerMessageContainer}>
+          <Text style={styles.ListContainerMessage}>
             Enter a place and press scan to generate a list
           </Text>
         </View>
@@ -180,12 +180,12 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignSelf: "stretch",
   },
-  ScrollViewMessageContainer: {
+  ListContainerMessageContainer: {
     flex: 1,
     justifyContent: "space-around",
     alignItems: "center",
   },
-  ScrollViewMessage: { fontWeight: "bold", fontSize: 18 },
+  ListContainerMessage: { fontWeight: "bold", fontSize: 18 },
   inputContainer: {
     marginTop: 50,
     backgroundColor: '#f0EEEE',

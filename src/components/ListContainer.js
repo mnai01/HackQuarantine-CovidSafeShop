@@ -9,7 +9,7 @@ import {
 import { createOpenLink } from "react-native-open-maps";
 import { ScrollView } from "react-native-gesture-handler";
 
-export default function ScroolView(props) {
+export default function ListContainer(props) {
   let d = new Date();
   let weekday = new Array(7);
   weekday[0] = "Sunday";
