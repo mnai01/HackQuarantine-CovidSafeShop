@@ -33,14 +33,13 @@ export default function ScanScreen() {
     errorMessage: "",
   });
 
-  const [value, onChangeText] = useState("");
 
   const [didMount, setDidMount] = useState(false);
   const [FinishedLoading, setLoading] = useState(false);
   const [ErrorTyped, setError] = useState(false);
 
   getlocationAsync = async () => {
-    //await Permissions.askAsync(Permissions.LOCATION);
+    // await Permissions.askAsync(Permissions.LOCATION);
     // This returns an object and that object contains a variable status
     // among many other variables
     // so const { } essentially says whatever value in the object.status
@@ -75,12 +74,12 @@ export default function ScanScreen() {
     getlocationAsync();
   }, []);
 
-  const handler = () => {
+  const handler = async () => {
     setError(false);
     setLoading(true);
     setDidMount(false);
-    console.log(current.name);
-    axios
+    await getlocationAsync().then(() => {
+      axios
       .get(
         "http://68.129.24.115:8080/api/" +
           "/" +
@@ -114,6 +113,8 @@ export default function ScanScreen() {
         //change
         console.log(err.message);
       });
+    })
+    
   };
   // let Loading = null;
   // if (didMount === false) {
@@ -134,7 +135,6 @@ export default function ScanScreen() {
             <Feather name="search" style={styles.iconStyle}/>
             <TextInput 
                 placeholder="Enter a place"
-                underlineColorAndroid={"#428Af8"}
                 style={styles.inputStyle}
                 onChangeText={(text) => onChangeText(text)}
                 value={value}
