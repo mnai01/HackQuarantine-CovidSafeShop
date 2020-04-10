@@ -1,6 +1,9 @@
 # CovidSafeShop
 
-This project was assembled during the 2020 HackQuarantine by https://github.com/m-wrzr/populartimes, [River Dennis](https://github.com/scifipanda), and [Nick Guzzardo](https://github.com/NickGuz).
+## About us
+
+This project was assembled during the 2020 HackQuarantine by [Ian Matlak](https://github.com/mnai01), [River Dennis](https://github.com/scifipanda) and [Nick Guzzardo](https://github.com/NickGuz). Our mission was to help clear up populated areas to keep people safe from crowds. Some of us on the team are from NY and COVID-19 is terrible here. Many people are panic buying which leads to crowds in grocery stores. The last place I want to be is in a crowded place which increases my risk of getting it and possibly infecting others who are at high risk of developing serious symptoms. This app will give the people a choice and help guide them to those less crowded, safer places. This is our first time ever developing a react native application. From the start, we had very little knowledge of the framework and since we joined late we only had 5 days to get something running. My team and I just kept fighting and eventually overcame challenges together. We now, not only have a new appreciation for react-native but have gained a new skill too. We have also learned about **Radar.io** and was able to implement their API into our project to help our cause. Our aim for prize categories where **Improving Awareness and Behaviour** 
+and **Most Creative Radar.io Hack**
 
 ## Summary
 
@@ -22,7 +25,7 @@ Page Walk Through
 
 ![Scan-Page](assets/ScanPage.gif)
 
-**Notification page**
+**Notification page(Uses Radar.io)**
 
 This page lets the user turn on or off automatic notifications based on the user's location. If this setting is on then the app will scan your location periodically. If you ever step in a store the application will realize and send you a reminder to not touch your face and wash your hand when you're done. This new lifestyle for us requires us to be very cautious while we are out. Some people still have trouble adjusting which why is this notification is geared towards reminding you to be safe.
 
