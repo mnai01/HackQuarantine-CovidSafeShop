@@ -175,7 +175,6 @@ export default function ScanScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginHorizontal: 10,
     backgroundColor: "#fff",
     justifyContent: "space-between",
     alignSelf: "stretch",
@@ -207,6 +206,7 @@ const styles = StyleSheet.create({
   buttonStyling: {
     marginTop: 10,
     marginBottom: 20,
+    marginHorizontal: 50,
     alignSelf: "stretch",
     justifyContent: "center",
     backgroundColor: "#4CA9FF",

@@ -163,6 +163,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   resListContainer: {
+    marginHorizontal: 15,
     justifyContent: "space-between",
     flex: 1,
     flexDirection: "row",
