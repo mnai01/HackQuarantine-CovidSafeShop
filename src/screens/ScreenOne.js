@@ -13,7 +13,6 @@ import { StyleSheet, Text, Button, View, Switch } from "react-native";
 import * as Location from "expo-location";
 import * as Permissions from "expo-permissions";
 import { Notifications } from "expo";
-import { API_KEY } from "react-native-dotenv";
 
 export default class App extends React.Component {
   constructor() {
