@@ -24,8 +24,8 @@ def render_request(keyword, lat, lng):
     place_ids = []
     json = []
 	
-	# Get place results within a range (i.e. 5) 
-    for i in range(5):
+	# Get place results within a range (i.e. 6) 
+    for i in range(6):
         try:
 			# Create list of place ids from google places api
             place_ids.append(places["results"][i]["place_id"])
